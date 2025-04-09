@@ -20,7 +20,7 @@ public class DefaultCountingOutRhymer {
         return total == MINUS_ONE;
     }
 
-    private boolean isFull() {
+    boolean isFull() {
         return total == ELEVEN;
     }
 
