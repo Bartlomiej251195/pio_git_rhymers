@@ -3,6 +3,8 @@ package edu.kis.vh.nursery;
 import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
 import edu.kis.vh.nursery.factory.Rhymersfactory;
 
+//Wszystkie testy przeszły prawidłowo
+
 class RhymersDemo {
 
     public static void main(String[] args) {
