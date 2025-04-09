@@ -1,17 +1,28 @@
 package edu.kis.vh.nursery;
 
-public class HanoiRhymer extends defaultCountingOutRhymer {
+/**
+ * Klasa odpowiadająca za stos
+ */
+public class HanoiRhymer extends DefaultCountingOutRhymer {
 
-int totalRejected = 0;
+    /**
+     * Licznik odrzuconych wartości.
+     */
+    private int totalRejected = 0;
 
     public int reportRejected() {
         return totalRejected;
     }
 
+    /**
+     * Dodaje element do stosu gdy jest mniejszy lub równy poprzedniemu
+     * @param in wartosc do dodania
+     */
+    @Override
     public void countIn(int in) {
-    if (!callCheck() && in > peekaboo())
+        if (!callCheck() && in > peekaboo())
             totalRejected++;
-            else
-                super.countIn(in);
+        else
+            super.countIn(in);
     }
 }
